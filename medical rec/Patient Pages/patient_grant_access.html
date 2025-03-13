@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Access</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grant Access to Your Records</h1>
+        <nav>
+            <a href="patient_dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <form action="grant_access_handler.py" method="POST">
+            <label for="doctorEmail">Doctor's Email:</label>
+            <input type="email" id="doctorEmail" name="doctorEmail" required>
+
+            <label for="record">Select Record:</label>
+            <select id="record" name="record">
+                <option value="record1.pdf">Blood Test Report</option>
+                <option value="record2.jpg">MRI Scan</option>
+            </select>
+
+            <button type="submit">Grant Access</button>
+        </form>
+    </main>
+</body>
+</html>
